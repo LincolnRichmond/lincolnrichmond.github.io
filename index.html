@@ -15,36 +15,46 @@
         }
         header {
             background-color: #2c3e50;
-            color: white;
-            padding: 1em;
+            color: white; /* Applies to all text in header */
+            padding: 2em;
             text-align: center;
             margin-bottom: 20px;
+        }
+        header h1 {
+            margin: 0;
+            padding-bottom: 0.5em; /* Adds space below name */
         }
         main {
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 30px;
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
+        h2 {
+            color: #2c3e50; /* Dark blue for main headings */
+            margin-top: 0;
+        }
         footer {
             text-align: center;
-            margin-top: 20px;
-            padding: 1em;
+            margin-top: 40px;
+            padding: 1.5em;
             background-color: #2c3e50;
             color: white;
         }
         footer nav a {
             color: white;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 15px;
+            transition: opacity 0.3s;
         }
-        h1, h2 {
-            color: #2c3e50;
+        footer nav a:hover {
+            opacity: 0.8;
         }
-        a {
-            color: #3498db;
+        .link-separator {
+            color: #95a5a6; /* Gray divider */
+            padding: 0 5px;
         }
     </style>
 </head>
@@ -56,15 +66,19 @@
 
     <main>
         <h2>Welcome to My Personal Site</h2>
-        <p>Hi! I’m a student at UNC Charlotte studying CompSci with a minor in Cyber Security. I’m passionate about web development, coding, and design. Feel free to explore my work below!</p>
+        <p>Hi! I’m a student at UNC Charlotte studying CompSci with a concentration in Cyber Security. I’m passionate about web development, coding, and design. Feel free to explore my work below!</p>
     </main>
 
     <footer>
         <nav>
-            <a href="https://github.com/lincolnrichmond">GitHub.com</a> ~ 
-            <a href="https://webpages.charlotte.edu/lrichmo8">CLT Web</a> ~ 
-            <a href="https://lincolnrichmond.github.io">GitHub.io</a> ~ 
-            <a href="itis3135/">ITIS3135</a> ~ 
+            <a href="https://github.com/lincolnrichmond">GitHub.com</a>
+            <span class="link-separator">~</span>
+            <a href="https://webpages.charlotte.edu/lrichmo8">CLT Web</a>
+            <span class="link-separator">~</span>
+            <a href="https://lincolnrichmond.github.io">GitHub.io</a>
+            <span class="link-separator">~</span>
+            <a href="itis3135/">ITIS3135</a>
+            <span class="link-separator">~</span>
             <a href="https://www.linkedin.com/in/lincolnrichmond/">LinkedIn</a>
         </nav>
         <br>

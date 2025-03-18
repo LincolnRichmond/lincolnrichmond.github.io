@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extreme Planking | Lincoln Richmond</title>
+    <style>
+        /* EMBEDDED CSS */
+        :root {
+            --primary: #1A535C;
+            --secondary: #FF6B6B; 
+            --accent: #FFE66D;
+            --text: #2E2E2E; 
+        }
+        body {
+            font-family: 'Comic Neue', cursive; 
+            margin: 0;
+            background-color: #F7FFF7; 
+            color: var(--text);
+        }
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            color: var(--accent);
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        figure {
+            border: 3px dashed var(--secondary);
+            padding: 10px;
+            text-align: center;
+        }
+        footer {
+            background-color: var(--primary);
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        .validation-buttons img {
+            width: 80px;
+            margin: 0 5px;
+        }
+        /* Hide all sections except active */
+        section:not(#what) { display: none; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Planking: The Art of Lying Down 🛌</h1>
+        <nav>
+            <a href="#what" onclick="showSection('what')">🏠 What</a> 🛌 
+            <a href="#who" onclick="showSection('who')">👥 Who</a> 🛌 
+            <a href="#when" onclick="showSection('when')">📅 When</a> 🛌 
+            <a href="#where" onclick="showSection('where')">📍 Where</a> 🛌 
+            <a href="#how" onclick="showSection('how')">📸 How</a> 🛌 
+            <a href="#why" onclick="showSection('why')">🤷 Why</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- WHAT SECTION -->
+        <section id="what">
+            <h2>What is Planking? 🤔</h2>
+            <p>Planking is lying face down in absurd public places, taking a photo, and posting it online for clout. You just had to be there to get it.</p>
+            <figure>
+                <img width="500px" src="images/plank-counter.jpg" alt="Person planking on a kitchen counter ">
+                <figcaption>Planking on a counter </figcaption>
+            </figure>
+            <p><em>Image credits: Donkey100 CC BY-SA 3.0 </em></p>
+        </section>
+
+        <!-- WHO SECTION -->
+        <section id="who">
+            <h2>Who Planks? 😎</h2>
+            <p>Anyone with a sense of humor and zero shame! Famous plankers include:</p>
+            <ul>
+                <li>College students avoiding homework</li>
+                <li>Office workers rebelling against monotony</li>
+                <li>Your weird cousin</li>
+            </ul>
+            <figure>
+                <img width="500px" src="images/classroom-plank.jpg" alt="Person planking in a classroom">
+                <figcaption>Planking during a class </figcaption>
+            </figure>
+            <p><em>credit: loannis Protonotarios CC BY-SA 3.0 </em></p>
+        </section>
+
+        <!-- WHEN SECTION -->
+        <section id="when">
+            <h2>When to Plank? 🕒</h2>
+            <p>Planking is best done:</p>
+            <ul>
+                <li>During awkward family gatherings</li>
+                <li>When your boss isn’t looking</li>
+                <li>At 3 AM for no reason</li>
+            </ul>
+            <figure>
+                <img width="500px" src="images/streetlight-plank.jpg" alt="Planking at night">
+                <figcaption>credit: Lusinemarg (talk) CC BY-SA 3.0</figcaption>
+            </figure>
+        </section>
+
+        <!-- WHERE SECTION -->
+        <section id="where">
+            <h2>Where to Plank? 🌍</h2>
+            <p>The weirder the location, the better! Examples:</p>
+            <table>
+                <tr><th>Location</th><th>Difficulty</th></tr>
+                <tr><td>Supermarket aisle</td><td>⭐️⭐️</td></tr>
+                <tr><td>Airport escalator</td><td>⭐️⭐️⭐️⭐️</td></tr>
+            </table>
+            <figure>
+                <img width="500px" src="images/escalator-plank.jpg" alt="Planking on an escalator">
+                <figcaption>credit: Christian Peregin CC BY-SA 3.0</figcaption>
+            </figure>
+        </section>
+
+        <!-- HOW SECTION -->
+        <section id="how">
+            <h2>How to Plank? 📜</h2>
+            <p>Step-by-step guide:</p>
+            <ol>
+                <li>Find a ridiculous spot</li>
+                <li>Lie face down, stiff as a board</li>
+                <li>Have a friend snap a pic</li>
+                <li>Post with #Planking</li>
+            </ol>
+            <figure>
+                <img width="500px" src="images/camel-plank.jpg" alt="Planking on a couple camels">
+                <figcaption>credit: Hunterpr CC BY-SA 3.0</figcaption>
+            </figure>
+        </section>
+
+        <!-- WHY SECTION -->
+        <section id="why">
+            <h2>Why Plank? 🤪</h2>
+            <p>Because why not? It’s:</p>
+            <ul>
+                <li>Free</li>
+                <li>Pointless</li>
+                <li>Oddly satisfying</li>
+            </ul>
+            <figure>
+                <img width="500px" src="images/town-plank.jpg" alt="Person planking in town">
+                <figcaption>credit: Hunterpr CC BY-SA 3.0</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>Designed by <a href="../" style="color: var(--accent);">Richmonte Inc.</a></p>
+        
+    </footer>
+	<script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('section').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
